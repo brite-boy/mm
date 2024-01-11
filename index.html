@@ -1,12 +1,15 @@
-<html style="height: 100%;background-color: white;">
-  <body>
-    <div
-      data-lyket-type="like"
-      data-lyket-id="notion-test"
-      data-lyket-template="twitter"
-      style="text-align: center;"
-     />
+import  React  from  'react'
+import { Button } from  'notion-components'
+import  'notion-components/dist/index.css'
 
-    <script src="https://www.notion.so/Notes-8ec64befec2042588e3068d2e201b470?pvs=4></script>
-  </body>
-</html>
+const  App  = () => {
+ 	const  onPress  = () => {
+ 			console.log('Did you just click me?!')
+ 	}
+ 	return (
+ 			<Button onClick={() =>  onPress()}>
+ 				New
+ 			</Button>
+ 	);
+}
+export  default  App
